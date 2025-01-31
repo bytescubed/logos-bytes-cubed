@@ -1,0 +1,30 @@
+<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes type {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      .terminal-text {
+        font-family: monospace;
+        animation: type 0.1s steps(1) forwards;
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal background -->
+  <rect width="500" height="200" fill="#1E1E1E"/>
+  
+  <!-- ASCII Art -->
+  <text class="terminal-text" fill="#00FF00">
+    <tspan x="20" y="40">+-----------------------+</tspan>
+    <tspan x="20" y="60">|  B Y T E S ³ C U B E D|</tspan>
+    <tspan x="20" y="80">+-----------------------+</tspan>
+  </text>
+  
+  <!-- Version text -->
+  <text x="20" y="120" 
+        font-family="monospace" 
+        fill="#FFFFFF" 
+        font-size="14">:: bytes³cubed ::        (v1.0.0)</text>
+</svg>

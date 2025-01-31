@@ -1,0 +1,32 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo oscuro -->
+  <rect width="400" height="120" fill="#1A1A1A"/>
+  
+  <!-- Grupo principal centrado -->
+  <g transform="translate(120,35)">
+    <!-- Cubo -->
+    <rect x="0" y="0" width="45" height="45" 
+          fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <rect x="10" y="-10" width="45" height="45" 
+          fill="none" stroke="#FFFFFF" stroke-width="3"/>
+          
+    <!-- Texto -->
+    <g transform="translate(70,-25)">
+      <text x="0" y="35" 
+            font-family="SF Pro Display, sans-serif" 
+            font-weight="500" 
+            font-size="34" 
+            fill="#FFFFFF">Bytes</text>
+      <text x="95" y="20" 
+            font-family="SF Pro Display, sans-serif" 
+            font-weight="500" 
+            font-size="20" 
+            fill="#FFFFFF">3</text>
+      <text x="0" y="75" 
+            font-family="SF Pro Display, sans-serif" 
+            font-weight="700" 
+            font-size="34" 
+            fill="#FFFFFF">Cubed</text>
+    </g>
+  </g>
+</svg>

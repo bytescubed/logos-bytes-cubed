@@ -1,0 +1,67 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @keyframes spinCube1 {
+        0% { transform: rotate(0deg); opacity: 0; }
+        40% { transform: rotate(280deg); opacity: 1; }
+        70% { transform: rotate(370deg); }
+        85% { transform: rotate(355deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes spinCube2 {
+        0% { transform: rotate(0deg); opacity: 0; }
+        40% { transform: rotate(-280deg); opacity: 1; }
+        70% { transform: rotate(-370deg); }
+        85% { transform: rotate(-355deg); }
+        100% { transform: rotate(-360deg); }
+      }
+      @keyframes fadeInSlide {
+        0% { transform: translateX(20px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+      }
+      #cube1 {
+        transform-origin: 22.5px 22.5px;
+        animation: spinCube1 2s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+      }
+      #cube2 {
+        transform-origin: 32.5px 12.5px;
+        animation: spinCube2 2s cubic-bezier(0.2, 0.8, 0.3, 1) forwards;
+      }
+      .text-animate {
+        animation: fadeInSlide 1s ease forwards;
+        animation-delay: 1.5s;
+        opacity: 0;
+      }
+    </style>
+  </defs>
+
+  <!-- Grupo principal centrado -->
+  <g transform="translate(120,35)">
+    <!-- Cubos animados -->
+    <rect id="cube1" x="0" y="0" width="45" height="45" 
+          fill="none" stroke="#0099FF" stroke-width="3"/>
+    <rect id="cube2" x="10" y="-10" width="45" height="45" 
+          fill="none" stroke="#0099FF" stroke-width="3"/>
+          
+    <!-- Texto con animación -->
+    <g transform="translate(70,-25)">
+      <g class="text-animate">
+        <text x="0" y="35" 
+              font-family="SF Pro Display, sans-serif" 
+              font-weight="500" 
+              font-size="34" 
+              fill="#0099FF">Bytes</text>
+        <text x="95" y="20" 
+              font-family="SF Pro Display, sans-serif" 
+              font-weight="500" 
+              font-size="20" 
+              fill="#0099FF">3</text>
+        <text x="0" y="75" 
+              font-family="SF Pro Display, sans-serif" 
+              font-weight="700" 
+              font-size="34" 
+              fill="#2D3748">Cubed</text>
+      </g>
+    </g>
+  </g>
+</svg>
